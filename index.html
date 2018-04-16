@@ -3,55 +3,37 @@
   <head>
     <title>Hello World!</title>
     <meta charest="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <style>
-      div {
-        color : blue;
-        font-size: 150%;
-      }
       .sidebar_text{
         text-align: center;
       }
-      #active{
-        text-align: right;
-      }
-      h1{
-        /*
-        border-width: 5px;
-        border-color: red;
-        border-style: solid;
-        중복을 한줄로 줄여주는 방법*/
-        /* border: 5px red solid; */
-        padding: 20px;
-        margin: 20px;
-        border-bottom: 1px solid gray;
-        /* CSS Box를 자기 영역만 표시되도록 변경자
-        display: inline;*/
-        /* CSS Box model 설정방법 - none지우기
-        display: none;
-        display: block;
-        */
-      }
-
       aside{
         border-right: 1px solid gray;
-        width: 120px;
-        padding: 20px;
+        width: 200px;
+        padding: 0px;
       }
-
+      #index_grid{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+      }
+      #index_article{
+        padding-left: 20px;
+      }
     </style>
-    <link href="main.css">
   </head>
 
   <body>
     <h1>IM JONG HYEOK</h1>
-    <aside id="active" style="color:orange">
-      Home<br>
-      CV<br>
-      User Experience
-    </aside>
-    <a>
-      어떤 작업을 소개할 것인지 선정하는 고민의 시간이 상당히 길었다. 우수한 일러스트레이터는 매우 많기에 몇 가지 기준을 세웠는데 인물 개인보다는 작업이 주는 신선함이 우선의 선택 기준이었다. 즉, 일러스트의 사용이 흥미로운 작업을 먼저 찾고 해당 작업을 한 일러스트레이터를 추적하는 순서였다. 또한, 될 수 있으면 6개월 이내에 회자되거나 공개된 또는 현재 진행 중인 작업 안에서 찾고자 했다. 시차가 크지 않은 작업들을 동일 선상에 놓고 보아야 일러스트 분야의 현재를 어렴풋이나마 그려볼 수 있으리라 여겼기 때문이다. 마지막으로 이는 다소 주관적인 기준일 수 있으나 근래에 에 등장한 적 없는 인물에 집중하고자 했다. 앞서 언급했듯 흥미로운 작업을 찾는 것이 우선이었으므로 부득이하게 3년 이내에 다뤘던 사람을 다시 소개하게 된 경우도 있지만 유사한 조건에 있다면 에 자주 등장하지 않은 일러스트레이터의 작업을 택했다. 이 조건들을 교차 확인하며 5가지의 사례를 추렸다.
-    </a>
-    <div class="sidebar_text">Hello Imjjong House</div>
+    <div id="index_grid">
+      <aside style="color:orange">
+        Home<br>
+        CV<br>
+        User Experience
+      </aside>
+      <div id="index_article">
+        어떤 작업을 소개할 것인지 선정하는 고민의 시간이 상당히 길었다. 우수한 일러스트레이터는 매우 많기에 몇 가지 기준을 세웠는데 인물 개인보다는 작업이 주는 신선함이 우선의 선택 기준이었다. 즉, 일러스트의 사용이 흥미로운 작업을 먼저 찾고 해당 작업을 한 일러스트레이터를 추적하는 순서였다. 또한, 될 수 있으면 6개월 이내에 회자되거나 공개된 또는 현재 진행 중인 작업 안에서 찾고자 했다. 시차가 크지 않은 작업들을 동일 선상에 놓고 보아야 일러스트 분야의 현재를 어렴풋이나마 그려볼 수 있으리라 여겼기 때문이다. 마지막으로 이는 다소 주관적인 기준일 수 있으나 근래에 에 등장한 적 없는 인물에 집중하고자 했다. 앞서 언급했듯 흥미로운 작업을 찾는 것이 우선이었으므로 부득이하게 3년 이내에 다뤘던 사람을 다시 소개하게 된 경우도 있지만 유사한 조건에 있다면 에 자주 등장하지 않은 일러스트레이터의 작업을 택했다. 이 조건들을 교차 확인하며 5가지의 사례를 추렸다.
+      </div>
+    </div>
   </body>
 </html>

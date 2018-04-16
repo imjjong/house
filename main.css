@@ -1,0 +1,36 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+    font-family:Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+}
+
+
+body        { font: 'Noto Sans KR', sans-serif; }
+.thin       { font-weight: 100 }
+.light      { font-weight: 300 }
+.regular    { font-weight: 400 }
+.medium     { font-weight: 500 }
+.bold       { font-weight: 700 }
+.bolder     { font-weight: 900 }
+
+
+      div{
+        border:0px solid gray;
+      }
+
+      h1{
+        /*
+        border-width: 5px;
+        border-color: red;
+        border-style: solid;
+        중복을 한줄로 줄여주는 방법*/
+        /* border: 5px red solid; */
+        padding: 40px;
+        margin: 0px;
+        border-bottom: 1px solid gray;
+        /* CSS Box를 자기 영역만 표시되도록 변경자
+        display: inline;*/
+        /* CSS Box model 설정방법 - none지우기
+        display: none;
+        display: block;
+        */
+      }
