@@ -1,0 +1,73 @@
+<!doctype>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+     body{
+       display:flex;
+       align-items: center;
+       justify-content:center;
+
+     }
+    .container{
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      border: 1px solid gray;
+
+    }
+    header{
+      border-bottom: 1px solid gray;
+      padding-left:20px;
+    }
+    footer{
+      border-top: 1px solid gray;
+      padding: 20px;
+      text-align: center;
+    }
+    .content{
+      display: flex;
+    }
+    .content nav{
+      border-right: 1px solid gray;
+    }
+    .content aside{
+      border-left: 1px solid gray;
+    }
+    nav, aside{
+      flex-basis: 120px;
+      flex-shrink: 0;
+    }
+    main{
+      padding: 20px;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>종혁</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>home</li>
+          <li>CV</li>
+          <li>portfoilo</li>
+        </ul>
+      </nav>
+        <main>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis veniam totam labore ipsum, nesciunt temporibus repudiandae facilis earum, sunt autem illum quam dolore, quae optio nemo vero quidem animi tempore aliquam voluptas assumenda ipsa voluptates.
+        </main>
+        <aside>
+          AD
+        </aside>
+    </section>
+    <footer>
+      <a href="http://imjjong.com">홈페이지</a>
+    </footer>
+  </div>
+</body>
+</html>
